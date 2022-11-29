@@ -1,3 +1,6 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
 /* Base */
 //:root {
 //  --white-color: #fff;
@@ -5,6 +8,7 @@
 //  --text-color: #333;
 //  --header-navbar-height: 52px;
 //}
+
 $white-color: #fff;
 $black-color: #000;
 $text-color: #333;
@@ -42,6 +46,19 @@ img {
 }
 .app {
 
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+::-webkit-scrollbar-track {
+  background: #c9c9c9;
 }
 
 /* Header */
@@ -111,8 +128,8 @@ img {
           display: block;
         }
 
-        a {
-          color: currentColor;
+        >a {
+         position: relative;
         }
 
         .subcate {
@@ -128,7 +145,7 @@ img {
             flex-direction: column;
             width: 200px;
             padding: 0;
-            background-color: #f3f3f3;
+            background-color: #fafafa;
             box-shadow: 0 0 0 #e5e5e5;
 
             li {
@@ -418,15 +435,17 @@ img {
   justify-content: center;
 }
 #form-contact{
-  width: 60vw;
+  width: 92%;
+  max-width: 700px;
 }
 .input-group {
   position: relative;
   padding-bottom: 20px;
 
   label{
-    font-size: 1.5rem;
+    margin-left: 12px;
     margin-bottom: 10px;
+    font-size: 1.5rem;
     display: inline-block;
     cursor: pointer;
   }
@@ -531,12 +550,27 @@ img {
 .hidden-sm {
   display: block;
 }
+#scroll-top {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  width: 49px;
+  height: 49px;
+  background: $primary-color;
+  border-radius: 100%;
+  color: $white-color;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Custom Carousel */
 .owl-carousel {
   .owl-nav button.owl-next, .owl-nav button.owl-prev {
     position: absolute;
     top: 50%;
-    color: white;
+    color: $white-color;
     transform: translateY(-100%);
     background: #04b2f7;
     opacity: 0.8;
@@ -595,12 +629,26 @@ img {
         position: absolute;
         top: 52px;
         left: 0;
-        background-color: azure;
+        background-color: #fcfcfc;
         flex-direction: column;
 
-        li {
+        >li {
           width: 100%;
           text-align: center;
+
+          &:before{
+            display: none;
+          }
+
+          >a:has(+ div):before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-12%);
+            border: 5px solid;
+            border-color: $primary-color transparent transparent transparent;
+          }
 
           .subcate {
             position: relative;
@@ -610,11 +658,19 @@ img {
               li {
                 text-align: center;
                 padding: 0;
+
+                + li {
+                  border-top: unset;
+                }
               }
             }
           }
         }
       }
     }
+  }
+
+  .content {
+    padding: 0;
   }
 }
