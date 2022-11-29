@@ -37,17 +37,19 @@ button {
   outline: none;
 }
 
+img {
+  width: 100%;
+}
 .app {
 
 }
 
 /* Header */
 .header {
-  padding: 0 120px;
+  //padding: 0 120px;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: $header-height;
   max-width: 100vw;
@@ -55,6 +57,12 @@ button {
   vertical-align: baseline;
   border-bottom: 1px solid #ddd;
   z-index: 2;
+
+  .wrap-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .logo {
     a {
@@ -88,7 +96,7 @@ button {
       height: 100%;
 
       li {
-        padding: 0 2px;
+        //padding: 0 2px;
         font-size: 14px;
         font-weight: 600;
         color: #444;
@@ -151,7 +159,7 @@ button {
   }
 
   .toolbox {
-    width: 86px;
+    width: auto;
     height: 100%;
     display: flex;
     align-items: center;
@@ -172,7 +180,7 @@ button {
 
       .search-box {
         position: absolute;
-        top: -4px;
+        top: 0;
         right: -4px;
         padding: 14px 36px 14px 14px;
         width: 250px;
@@ -198,7 +206,7 @@ button {
 
   a {
     display: block;
-    width: 94%;
+    width: 100%;
     height: 28px;
     text-indent: -9999px;
     background-size: cover;
@@ -210,9 +218,9 @@ button {
 }
 
 /* Container */
-.container {
+.content {
   margin-top: calc($header-height + 24px);
-  padding: 0 120px;
+  padding: 0 30px;
   display: flex;
 
   section {
@@ -300,6 +308,7 @@ button {
       .news-horizontal {
         height: 100px;
         width: 390px;
+        max-width: 100%;
 
         .news-thumb {
           width: 150px;
@@ -307,9 +316,11 @@ button {
 
         .news-content {
           margin: 0 12px;
+          width: calc(100% - 80px);
+
           .news-title {
             margin: 12px 0 6px;
-            width: 240px;
+            width: 100%;
             font-size: 1.6rem;
             line-height: 1.8rem;
             display: -webkit-box;
@@ -325,6 +336,7 @@ button {
         flex-direction: column;
         height: 324px;
         width: 390px;
+        max-width: 100%;
 
         .news-thumb {
           height: 74%;
@@ -356,20 +368,20 @@ button {
 
   /* Main */
   main {
-    width: 74%;
-    margin-right: 12px;
+    //width: 74%;
+    //margin-right: 12px;
     margin-top: -32px;
   }
 
   /* Aside */
   aside {
     margin-top: -32px;
-    width: 26%;
-    height: 100vh;
+    //width: 26%;
+    //height: 100vh;
 
     .news-vertical {
-      width: inherit!important;
-      height: 200px!important;
+      //width: inherit!important;
+      //height: 200px!important;
 
       .news-thumb {
         height: 60% !important;
@@ -382,7 +394,7 @@ button {
   }
 
   .news-wrap-horizontal, .news-wrap-vertical {
-    margin-left: 12px;
+    //margin-left: 12px;
   }
   .news-wrap-horizontal {
     display: flex;
@@ -390,6 +402,7 @@ button {
   .news-wrap-vertical {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -512,6 +525,96 @@ button {
 }
 
 /* Other class */
-.hidden {
+.hidden, .hidden-lg {
   display: none;
+}
+.hidden-sm {
+  display: block;
+}
+/* Custom Carousel */
+.owl-carousel {
+  .owl-nav button.owl-next, .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    color: white;
+    transform: translateY(-100%);
+    background: #04b2f7;
+    opacity: 0.8;
+    padding: 11px 8px !important;
+    font-size: 1.8rem;
+  }
+ .owl-nav button.owl-next {
+    right: 0;
+  }
+ .owl-nav button.owl-prev {
+    left: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer {
+    .footer-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .left-info {
+        align-items: center;
+
+        .web-info {
+          text-align: center;
+        }
+      }
+      .right-info{
+        margin-top: 12px;
+
+        .copyright-info p{
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  .hidden-lg {
+    display: block;
+  }
+  .hidden-sm {
+    display: none;
+  }
+
+  .header {
+    .wrap-header {
+      padding: 4px 24px 0;
+    }
+    .category-menu {
+      ul {
+        height: auto;
+        max-height: 82vh;
+        width: 100vw;
+        position: absolute;
+        top: 52px;
+        left: 0;
+        background-color: azure;
+        flex-direction: column;
+
+        li {
+          width: 100%;
+          text-align: center;
+
+          .subcate {
+            position: relative;
+            top: 0;
+            ol {
+              width: 100vw;
+              li {
+                text-align: center;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

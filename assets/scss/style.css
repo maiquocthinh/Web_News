@@ -25,13 +25,15 @@ button {
   outline: none;
 }
 
+img {
+  width: 100%;
+}
+
 /* Header */
 .header {
-  padding: 0 120px;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 52px;
   max-width: 100vw;
@@ -39,6 +41,11 @@ button {
   vertical-align: baseline;
   border-bottom: 1px solid #ddd;
   z-index: 2;
+}
+.header .wrap-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header .logo a span {
   font-size: 0.8rem;
@@ -68,7 +75,6 @@ button {
   height: 100%;
 }
 .header .category-menu ul li {
-  padding: 0 2px;
   font-size: 14px;
   font-weight: 600;
   color: #444;
@@ -120,7 +126,7 @@ button {
   background-color: #04b2f7;
 }
 .header .toolbox {
-  width: 86px;
+  width: auto;
   height: 100%;
   display: flex;
   align-items: center;
@@ -139,7 +145,7 @@ button {
 }
 .header .toolbox .search .search-box {
   position: absolute;
-  top: -4px;
+  top: 0;
   right: -4px;
   padding: 14px 36px 14px 14px;
   width: 250px;
@@ -162,7 +168,7 @@ button {
 }
 .logo a {
   display: block;
-  width: 94%;
+  width: 100%;
   height: 28px;
   text-indent: -9999px;
   background-size: cover;
@@ -173,17 +179,17 @@ button {
 }
 
 /* Container */
-.container {
+.content {
   margin-top: 76px;
-  padding: 0 120px;
+  padding: 0 30px;
   display: flex;
   /* Main */
   /* Aside */
 }
-.container section {
+.content section {
   margin: 32px 0;
 }
-.container section .section-header {
+.content section .section-header {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -195,7 +201,7 @@ button {
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
-.container section .section-header .title {
+.content section .section-header .title {
   font-size: 2.2rem;
   font-weight: 600;
   color: #333;
@@ -203,65 +209,67 @@ button {
   display: flex;
   cursor: pointer;
 }
-.container section .section-header .title .icon {
+.content section .section-header .title .icon {
   color: #04b2f7;
   margin-right: 12px;
 }
-.container section .section-header .title:hover span {
+.content section .section-header .title:hover span {
   color: #04b2f7;
 }
-.container section .section-header .view-more {
+.content section .section-header .view-more {
   font-size: 1.6rem;
   font-weight: 500;
   color: #333;
 }
-.container section .section-header .view-more:hover {
+.content section .section-header .view-more:hover {
   color: #04b2f7;
   text-decoration: underline;
 }
-.container section .section-content .news-item {
+.content section .section-content .news-item {
   display: inline-flex;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   margin-top: 12px;
 }
-.container section .section-content .news-item .news-thumb {
+.content section .section-content .news-item .news-thumb {
   padding: 1px;
   overflow: hidden;
 }
-.container section .section-content .news-item .news-thumb img {
+.content section .section-content .news-item .news-thumb img {
   height: 100%;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
-.container section .section-content .news-item .news-thumb:hover img {
+.content section .section-content .news-item .news-thumb:hover img {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
 }
-.container section .section-content .news-item .news-content .news-title:hover {
+.content section .section-content .news-item .news-content .news-title:hover {
   color: #04b2f7;
 }
-.container section .section-content .news-item .news-content .news-meta {
+.content section .section-content .news-item .news-content .news-meta {
   display: flex;
   margin-left: 2px;
 }
-.container section .section-content .news-item .news-content .news-meta .news-comment {
+.content section .section-content .news-item .news-content .news-meta .news-comment {
   display: inline-flex;
   margin-left: 8px;
 }
-.container section .section-content .news-horizontal {
+.content section .section-content .news-horizontal {
   height: 100px;
   width: 390px;
+  max-width: 100%;
 }
-.container section .section-content .news-horizontal .news-thumb {
+.content section .section-content .news-horizontal .news-thumb {
   width: 150px;
 }
-.container section .section-content .news-horizontal .news-content {
+.content section .section-content .news-horizontal .news-content {
   margin: 0 12px;
+  width: calc(100% - 80px);
 }
-.container section .section-content .news-horizontal .news-content .news-title {
+.content section .section-content .news-horizontal .news-content .news-title {
   margin: 12px 0 6px;
-  width: 240px;
+  width: 100%;
   font-size: 1.6rem;
   line-height: 1.8rem;
   display: -webkit-box;
@@ -270,22 +278,23 @@ button {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.container section .section-content .news-vertical {
+.content section .section-content .news-vertical {
   flex-direction: column;
   height: 324px;
   width: 390px;
+  max-width: 100%;
 }
-.container section .section-content .news-vertical .news-thumb {
+.content section .section-content .news-vertical .news-thumb {
   height: 74%;
 }
-.container section .section-content .news-vertical .news-thumb img {
+.content section .section-content .news-vertical .news-thumb img {
   width: 100%;
   height: 100%;
 }
-.container section .section-content .news-vertical .news-content {
+.content section .section-content .news-vertical .news-content {
   padding: 0 12px;
 }
-.container section .section-content .news-vertical .news-content .news-title {
+.content section .section-content .news-vertical .news-content .news-title {
   margin: 12px 0;
   font-size: 1.6rem;
   line-height: 1.8rem;
@@ -295,38 +304,28 @@ button {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.container section .section-content .news-vertical .news-content .news-meta {
+.content section .section-content .news-vertical .news-content .news-meta {
   font-size: 1.2rem;
 }
-.container main {
-  width: 74%;
-  margin-right: 12px;
+.content main {
   margin-top: -32px;
 }
-.container aside {
+.content aside {
   margin-top: -32px;
-  width: 26%;
-  height: 100vh;
 }
-.container aside .news-vertical {
-  width: inherit !important;
-  height: 200px !important;
-}
-.container aside .news-vertical .news-thumb {
+.content aside .news-vertical .news-thumb {
   height: 60% !important;
 }
-.container aside .news-wrap-vertical {
+.content aside .news-wrap-vertical {
   margin-left: 0;
 }
-.container .news-wrap-horizontal, .container .news-wrap-vertical {
-  margin-left: 12px;
-}
-.container .news-wrap-horizontal {
+.content .news-wrap-horizontal {
   display: flex;
 }
-.container .news-wrap-vertical {
+.content .news-wrap-vertical {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #news-silder {
@@ -434,8 +433,86 @@ button {
 }
 
 /* Other class */
-.hidden {
+.hidden, .hidden-lg {
   display: none;
+}
+
+.hidden-sm {
+  display: block;
+}
+
+/* Custom Carousel */
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  color: white;
+  transform: translateY(-100%);
+  background: #04b2f7;
+  opacity: 0.8;
+  padding: 11px 8px !important;
+  font-size: 1.8rem;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-wrapper .left-info {
+    align-items: center;
+  }
+  .footer .footer-wrapper .left-info .web-info {
+    text-align: center;
+  }
+  .footer .footer-wrapper .right-info {
+    margin-top: 12px;
+  }
+  .footer .footer-wrapper .right-info .copyright-info p {
+    text-align: center !important;
+  }
+}
+@media (max-width: 760px) {
+  .hidden-lg {
+    display: block;
+  }
+  .hidden-sm {
+    display: none;
+  }
+  .header .wrap-header {
+    padding: 4px 24px 0;
+  }
+  .header .category-menu ul {
+    height: auto;
+    max-height: 82vh;
+    width: 100vw;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    background-color: azure;
+    flex-direction: column;
+  }
+  .header .category-menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .header .category-menu ul li .subcate {
+    position: relative;
+    top: 0;
+  }
+  .header .category-menu ul li .subcate ol {
+    width: 100vw;
+  }
+  .header .category-menu ul li .subcate ol li {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

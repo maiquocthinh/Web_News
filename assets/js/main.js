@@ -8,6 +8,7 @@ searchBtn.onclick = function (e) {
 $('#news-silder').owlCarousel({
     loop: true,
     margin: 10,
+    nav: true,
     autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
@@ -19,7 +20,6 @@ $('#news-silder').owlCarousel({
         },
         1000:{
             items:2,
-            // loop: false,
         }
     }
 });
@@ -77,5 +77,20 @@ if(contactForm){
 
         if(contactName.value && contactTitle.value && contactContent.value && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail.value)) alert('Gửi thông tin liên hệ thành công!');
 
+    }
+}
+
+// Show hide mobile menu
+const btnShowHideMenu = document.querySelector('.expand-mobile-menu .btn-show-hide');
+if(btnShowHideMenu) {
+    let isExpand = false;
+    const menu = document.querySelector('.category-menu');
+    btnShowHideMenu.onclick = function (){
+        menu.classList.toggle('hidden-sm', isExpand);
+        isExpand = !isExpand;
+        const activeIcon = btnShowHideMenu.querySelector('i.hidden');
+        const notActiveIcon = btnShowHideMenu.querySelector('i:not(.hidden)');
+        activeIcon.classList.remove('hidden');
+        notActiveIcon.classList.add('hidden');
     }
 }

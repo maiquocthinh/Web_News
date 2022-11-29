@@ -9,336 +9,121 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" referrerpolicy="no-referrer" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
     <link href="./assets/scss/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="app">
     <!-- Heading -->
     <header class="header">
-        <h1 class="logo">
-            <a href="./trang-chu.html" title="Zing News - Thông tin uy tín, hình ảnh ấn tượng">
-                <span>Tạp chí tri thức trực tuyến</span>
-            </a>
-        </h1>
-        <nav class="category-menu">
-            <ul>
-                <li>
-                    <a href="#">Thời sự - xã hội</a>
-                    <div class="subcate">
-                        <ol>
-                            <li>
-                                <a href="#">Chính trị</a>
-                            </li>
-                            <li>
-                                <a href="#">Giáo dục</a>
-                            </li>
-                            <li>
-                                <a href="#">Y tế</a>
-                            </li>
-                        </ol>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Quốc tế</a>
-                    <div class="subcate">
-                        <ol>
-                            <li>
-                                <a href="#">Kinh tế quốc tế</a>
-                            </li>
-                            <li>
-                                <a href="#">Chính trị quốc tế</a>
-                            </li>
-                            <li>
-                                <a href="#">Quân đội</a>
-                            </li>
-                        </ol>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Thể thao</a>
-                </li>
-                <li>
-                    <a href="#">Pháp luật</a>
-                </li>
-                <li>
-                    <a href="#">Công nghệ</a>
-                </li>
-                <li>
-                    <a href="#">Đời sống</a>
-                    <div class="subcate">
-                        <ol>
-                            <li>
-                                <a href="#">Gia đình</a>
-                            </li>
-                            <li>
-                                <a href="#">Ẩm thực</a>
-                            </li>
-                        </ol>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Giải trí</a>
-                    <div class="subcate">
-                        <ol>
-                            <li>
-                                <a href="#">Điện ảnh</a>
-                            </li>
-                            <li>
-                                <a href="#">Truyền hình</a>
-                            </li>
-                            <li>
-                                <a href="#">Âm nhạc</a>
-                            </li>
-                        </ol>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <div class="toolbox">
-            <div class="search">
-                <input class="search-box hidden" placeholder="Nhập nội dung cần tìm..." type="text">
-                <button class="search-btn">
-                    <i class="ri-search-line"></i>
-                </button>
-            </div>
-            <div class="login">
-                <button class="login">
-                    <i class="ri-user-line"></i>
-                </button>
+        <div class="container-lg wrap-header">
+            <h1 class="logo">
+                <a href="./trang-chu.html" title="Zing News - Thông tin uy tín, hình ảnh ấn tượng">
+                    <span>Tạp chí tri thức trực tuyến</span>
+                </a>
+            </h1>
+            <nav class="category-menu hidden-sm">
+                <ul>
+                    <li>
+                        <a href="#">Thời sự - xã hội</a>
+                        <div class="subcate">
+                            <ol>
+                                <li>
+                                    <a href="#">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giáo dục</a>
+                                </li>
+                                <li>
+                                    <a href="#">Y tế</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Quốc tế</a>
+                        <div class="subcate">
+                            <ol>
+                                <li>
+                                    <a href="#">Kinh tế quốc tế</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính trị quốc tế</a>
+                                </li>
+                                <li>
+                                    <a href="#">Quân đội</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Thể thao</a>
+                    </li>
+                    <li>
+                        <a href="#">Pháp luật</a>
+                    </li>
+                    <li>
+                        <a href="#">Công nghệ</a>
+                    </li>
+                    <li>
+                        <a href="#">Đời sống</a>
+                        <div class="subcate">
+                            <ol>
+                                <li>
+                                    <a href="#">Gia đình</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ẩm thực</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Giải trí</a>
+                        <div class="subcate">
+                            <ol>
+                                <li>
+                                    <a href="#">Điện ảnh</a>
+                                </li>
+                                <li>
+                                    <a href="#">Truyền hình</a>
+                                </li>
+                                <li>
+                                    <a href="#">Âm nhạc</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="toolbox">
+                <div class="expand-mobile-menu hidden-lg">
+                    <button class="btn-show-hide">
+                        <i class="ri-menu-fill"></i>
+                        <i class="ri-close-fill hidden"></i>
+                    </button>
+                </div>
+                <div class="search">
+                    <input class="search-box hidden" placeholder="Nhập nội dung cần tìm..." type="text">
+                    <button class="search-btn">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+                <div class="login">
+                    <button class="login">
+                        <i class="ri-user-line"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
-    <!--  Container  -->
-    <div class="container">
-        <main>
-            <section>
-                <div class="section-content owl-carousel owl-theme" id="news-silder">
-                    <div class="news-item news-vertical">
-                        <a class="news-thumb" href="./bai-viet-1.html">
-                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/aeixrdbkxq/2022_11_18/Frame_20.jpg" alt="'Bing chilling' la gi ma ai cung muon an" />
-                        </a>
-                        <a class="news-content" href="bai-viet-1.html">
-                            <h4 class="news-title">'Bing chilling' là gì mà ai cũng muốn ăn</h4>
-                            <div class="news-meta">
-                                <span class="news-time">2 giờ trước</span>
-                                <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 2
-                                        </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news-item news-vertical">
-                        <a class="news-thumb" href="./bai-viet-2.html">
-                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/piqbzcvo/2022_11_17/Screen_Shot_2022_11_17_at_18.29.54.png" alt="Superman đã thay đổi như thế nào so với bản gốc" />
-                        </a>
-                        <a class="news-content" href="./bai-viet-2.html">
-                            <h4 class="news-title">Superman đã thay đổi như thế nào so với bản gốc</h4>
-                            <div class="news-meta">
-                                <span class="news-time">1 giờ trước</span>
-                                <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 4
-                                        </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news-item news-vertical">
-                        <a class="news-thumb" href="./bai-viet-3.html">
-                            <img src="https://znews-photo.zingcdn.me/w480/Uploaded/sfrsm/2022_11_19/20220825_nid_bronze_age_ilipinar.jpg" alt="Điều gì sẽ xảy ra nếu Twitter sập" />
-                        </a>
-                        <a class="news-content" href="./bai-viet-3.html">
-                            <h4 class="news-title">Điều gì sẽ xảy ra nếu Twitter sập</h4>
-                            <div class="news-meta">
-                                <span class="news-time">30 phút trước</span>
-                                <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 7
-                                        </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news-item news-vertical">
-                        <a class="news-thumb" href="./bai-viet-4.html">
-                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
-                        </a>
-                        <a class="news-content" href="./bai-viet-4.html">
-                            <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
-                            <div class="news-meta">
-                                <span class="news-time">6 giờ trước</span>
-                                <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 1
-                                        </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news-item news-vertical">
-                        <a class="news-thumb" href="./bai-viet-5.html">
-                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_16/Pilgrims_hold_umbrellas_during_Mass_in_Romania_2019_AP.jpg" alt="Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người" />
-                        </a>
-                        <a class="news-content" href="./bai-viet-5.html">
-                            <h4 class="news-title">Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người</h4>
-                            <div class="news-meta">
-                                <span class="news-time">8 giờ trước</span>
-                                <span class="news-comment">
-                                    <i class="ri-chat-1-line"></i> 2
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section >
-                <div class="section-header">
-                    <h3 class="title">
-                        <i class="ri-newspaper-line icon"></i>
-                        <span>News Latest</span>
-                    </h3>
-                    <a href="#" class="view-more">Xem Thêm</a>
-                </div>
-                <div class="section-content">
-                    <div class="news-list news-wrap-horizontal">
-                        <div class="news-item news-vertical">
-                            <a class="news-thumb" href="./bai-viet-3.html">
-                                <img src="https://znews-photo.zingcdn.me/w480/Uploaded/sfrsm/2022_11_19/20220825_nid_bronze_age_ilipinar.jpg" alt="Điều gì sẽ xảy ra nếu Twitter sập" />
-                            </a>
-                            <a class="news-content" href="./bai-viet-3.html">
-                                <h4 class="news-title">Điều gì sẽ xảy ra nếu Twitter sập</h4>
-                                <div class="news-meta">
-                                    <span class="news-time">30 phút trước</span>
-                                    <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 7
-                                        </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="news-wrap-vertical">
-                            <div class="news-item news-horizontal">
-                                <a class="news-thumb" href="./bai-viet-4.html">
-                                    <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
-                                </a>
-                                <a class="news-content" href="./bai-viet-4.html">
-                                    <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
-                                    <div class="news-meta">
-                                        <span class="news-time">6 giờ trước</span>
-                                        <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 1
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="news-item news-horizontal">
-                                <a class="news-thumb" href="./bai-viet-5.html">
-                                    <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_16/Pilgrims_hold_umbrellas_during_Mass_in_Romania_2019_AP.jpg" alt="Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người" />
-                                </a>
-                                <a class="news-content" href="./bai-viet-5.html">
-                                    <h4 class="news-title">Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người</h4>
-                                    <div class="news-meta">
-                                        <span class="news-time">8 giờ trước</span>
-                                        <span class="news-comment">
-                                    <i class="ri-chat-1-line"></i> 2
-                                </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="news-item news-horizontal">
-                                <a class="news-thumb" href="http://zingnews.vn">
-                                    <img src="https://znews-photo.zingcdn.me/w360/Uploaded/aeixrdbkxq/2022_11_18/Frame_20.jpg" alt="'Bing chilling' la gi ma ai cung muon an" />
-                                </a>
-                                <a class="news-content" href="http://zingnews.vn">
-                                    <h4 class="news-title">'Bing chilling' là gì mà ai cũng muốn ăn</h4>
-                                    <div class="news-meta">
-                                        <span class="news-time">2 giờ trước</span>
-                                        <span class="news-comment">
-                                                <i class="ri-chat-1-line"></i> 2
-                                            </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section >
-                <div class="section-header">
-                    <h3 class="title">
-                        <i class="ri-settings-line icon"></i>
-                        <span>News Tech</span>
-                    </h3>
-                    <a href="#" class="view-more">Xem Thêm</a>
-                </div>
-                <div class="section-content">
-                    <div class="news-list news-wrap-horizontal">
-                        <div class="news-item news-vertical">
-                            <a class="news-thumb" href="./bai-viet-4.html">
-                                <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
-                            </a>
-                            <a class="news-content" href="./bai-viet-4.html">
-                                <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
-                                <div class="news-meta">
-                                    <span class="news-time">6 giờ trước</span>
-                                    <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 1
-                                        </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="news-wrap-vertical">
-                            <div class="news-item news-horizontal">
-                                <a class="news-thumb" href="./bai-viet-5.html">
-                                    <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_16/Pilgrims_hold_umbrellas_during_Mass_in_Romania_2019_AP.jpg" alt="Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người" />
-                                </a>
-                                <a class="news-content" href="./bai-viet-5.html">
-                                    <h4 class="news-title">Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người</h4>
-                                    <div class="news-meta">
-                                        <span class="news-time">8 giờ trước</span>
-                                        <span class="news-comment">
-                                    <i class="ri-chat-1-line"></i> 2
-                                </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="news-item news-horizontal">
-                                <a class="news-thumb" href="./bai-viet-4.html">
-                                    <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
-                                </a>
-                                <a class="news-content" href="./bai-viet-4.html">
-                                    <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
-                                    <div class="news-meta">
-                                        <span class="news-time">6 giờ trước</span>
-                                        <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 1
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="news-item news-horizontal">
-                                <a class="news-thumb" href="./bai-viet-3.html">
-                                    <img src="https://znews-photo.zingcdn.me/w480/Uploaded/sfrsm/2022_11_19/20220825_nid_bronze_age_ilipinar.jpg" alt="Điều gì sẽ xảy ra nếu Twitter sập" />
-                                </a>
-                                <a class="news-content" href="./bai-viet-3.html">
-                                    <h4 class="news-title">Điều gì sẽ xảy ra nếu Twitter sập</h4>
-                                    <div class="news-meta">
-                                        <span class="news-time">30 phút trước</span>
-                                        <span class="news-comment">
-                                            <i class="ri-chat-1-line"></i> 7
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <aside>
-            <section>
-                <div class="section-header">
-                    <h3 class="title">
-                        <i class="ri-star-line icon"></i>
-                        <span>Top News</span>
-                    </h3>
-                </div>
-                <div class="section-content">
-                    <div class="news-list">
-                        <div class="news-wrap-vertical">
+    <!--  Content  -->
+    <div class="content">
+        <div class="container-lg">
+            <div class="row">
+                <main class="col-lg-8 col-md-12 col-sm-12">
+                    <section>
+                        <div class="section-content owl-carousel owl-theme" id="news-silder">
                             <div class="news-item news-vertical">
                                 <a class="news-thumb" href="./bai-viet-1.html">
                                     <img src="https://znews-photo.zingcdn.me/w360/Uploaded/aeixrdbkxq/2022_11_18/Frame_20.jpg" alt="'Bing chilling' la gi ma ai cung muon an" />
@@ -410,19 +195,250 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-        </aside>
+                    </section>
+                    <section >
+                        <div class="section-header">
+                            <h3 class="title">
+                                <i class="ri-newspaper-line icon"></i>
+                                <span>News Latest</span>
+                            </h3>
+                            <a href="#" class="view-more">Xem Thêm</a>
+                        </div>
+                        <div class="section-content">
+                            <div class="news-list news-wrap-horizontal row">
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="display: flex;justify-content: center;">
+                                    <div class="news-item news-vertical">
+                                        <a class="news-thumb" href="./bai-viet-3.html">
+                                            <img src="https://znews-photo.zingcdn.me/w480/Uploaded/sfrsm/2022_11_19/20220825_nid_bronze_age_ilipinar.jpg" alt="Điều gì sẽ xảy ra nếu Twitter sập" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-3.html">
+                                            <h4 class="news-title">Điều gì sẽ xảy ra nếu Twitter sập</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">30 phút trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 7
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-wrap-vertical col-lg-6 col-md-6 col-sm-12">
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-4.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-4.html">
+                                            <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">6 giờ trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 1
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-5.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_16/Pilgrims_hold_umbrellas_during_Mass_in_Romania_2019_AP.jpg" alt="Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-5.html">
+                                            <h4 class="news-title">Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">8 giờ trước</span>
+                                                <span class="news-comment">
+                                    <i class="ri-chat-1-line"></i> 2
+                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="http://zingnews.vn">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/aeixrdbkxq/2022_11_18/Frame_20.jpg" alt="'Bing chilling' la gi ma ai cung muon an" />
+                                        </a>
+                                        <a class="news-content" href="http://zingnews.vn">
+                                            <h4 class="news-title">'Bing chilling' là gì mà ai cũng muốn ăn</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">2 giờ trước</span>
+                                                <span class="news-comment">
+                                                <i class="ri-chat-1-line"></i> 2
+                                            </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section >
+                        <div class="section-header">
+                            <h3 class="title">
+                                <i class="ri-settings-line icon"></i>
+                                <span>News Tech</span>
+                            </h3>
+                            <a href="#" class="view-more">Xem Thêm</a>
+                        </div>
+                        <div class="section-content">
+                            <div class="news-list news-wrap-horizontal row">
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="display: flex;justify-content: center;">
+                                    <div class="news-item news-vertical">
+                                        <a class="news-thumb" href="./bai-viet-4.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-4.html">
+                                            <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">6 giờ trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 1
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-wrap-vertical col-lg-6 col-md-6 col-sm-12">
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-5.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_16/Pilgrims_hold_umbrellas_during_Mass_in_Romania_2019_AP.jpg" alt="Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-5.html">
+                                            <h4 class="news-title">Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">8 giờ trước</span>
+                                                <span class="news-comment">
+                                    <i class="ri-chat-1-line"></i> 2
+                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-4.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-4.html">
+                                            <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">6 giờ trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 1
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-3.html">
+                                            <img src="https://znews-photo.zingcdn.me/w480/Uploaded/sfrsm/2022_11_19/20220825_nid_bronze_age_ilipinar.jpg" alt="Điều gì sẽ xảy ra nếu Twitter sập" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-3.html">
+                                            <h4 class="news-title">Điều gì sẽ xảy ra nếu Twitter sập</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">30 phút trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 7
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <aside class="col-lg-4 col-md-12 col-sm-12">
+                    <section>
+                        <div class="section-header">
+                            <h3 class="title">
+                                <i class="ri-star-line icon"></i>
+                                <span>Top News</span>
+                            </h3>
+                        </div>
+                        <div class="section-content">
+                            <div class="news-list">
+                                <div class="news-wrap-vertical">
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-1.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/aeixrdbkxq/2022_11_18/Frame_20.jpg" alt="'Bing chilling' la gi ma ai cung muon an" />
+                                        </a>
+                                        <a class="news-content" href="bai-viet-1.html">
+                                            <h4 class="news-title">'Bing chilling' là gì mà ai cũng muốn ăn</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">2 giờ trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 2
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-2.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/piqbzcvo/2022_11_17/Screen_Shot_2022_11_17_at_18.29.54.png" alt="Superman đã thay đổi như thế nào so với bản gốc" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-2.html">
+                                            <h4 class="news-title">Superman đã thay đổi như thế nào so với bản gốc</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">1 giờ trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 4
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-3.html">
+                                            <img src="https://znews-photo.zingcdn.me/w480/Uploaded/sfrsm/2022_11_19/20220825_nid_bronze_age_ilipinar.jpg" alt="Điều gì sẽ xảy ra nếu Twitter sập" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-3.html">
+                                            <h4 class="news-title">Điều gì sẽ xảy ra nếu Twitter sập</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">30 phút trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 7
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-4.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_18/1_1.jpg" alt="Việt Nam kết nối Internet tròn 25 năm" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-4.html">
+                                            <h4 class="news-title">Việt Nam kết nối Internet tròn 25 năm</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">6 giờ trước</span>
+                                                <span class="news-comment">
+                                            <i class="ri-chat-1-line"></i> 1
+                                        </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-item news-horizontal">
+                                        <a class="news-thumb" href="./bai-viet-5.html">
+                                            <img src="https://znews-photo.zingcdn.me/w360/Uploaded/sfrsm/2022_11_16/Pilgrims_hold_umbrellas_during_Mass_in_Romania_2019_AP.jpg" alt="Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người" />
+                                        </a>
+                                        <a class="news-content" href="./bai-viet-5.html">
+                                            <h4 class="news-title">Làm thế nào chúng ta đếm được Trái Đất có 8 tỷ người</h4>
+                                            <div class="news-meta">
+                                                <span class="news-time">8 giờ trước</span>
+                                                <span class="news-comment">
+                                    <i class="ri-chat-1-line"></i> 2
+                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+
     </div>
     <!--  Footer  -->
     <footer class="footer">
         <div class="footer-wrapper">
             <div class="left-info">
                 <div class="logo">
-                    <a href="#">
-                        <img alt="Zingnews" src="https://cdn.freelogodesign.org/files/46a729e53a0d4c9c983825dc68e5ff30/thumb/logo_200x200.png">
-                    </a>
+                    <a href="#"></a>
                 </div>
                 <div class="web-info">
                     <p style="line-height: 1.7; font-size: 12px;">
